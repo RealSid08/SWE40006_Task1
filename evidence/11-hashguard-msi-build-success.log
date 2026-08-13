@@ -1,0 +1,10 @@
+wix.exe : warning WIX1105: Validation could not run due to system policy. To eliminate this warning, run the process as admin or suppress ICE validation. [C:\Users\prosi\Documents\SWE40006_Task1\installer\HashGuardInstaller\HashGuardInstaller.wixproj]
+  HashGuardInstaller -> C:\Users\prosi\Documents\SWE40006_Task1\installer\HashGuardInstaller\bin\Release\HashGuard-Desktop-1.0.0-x64.msi
+
+Build succeeded.
+
+wix.exe : warning WIX1105: Validation could not run due to system policy. To eliminate this warning, run the process as admin or suppress ICE validation. [C:\Users\prosi\Documents\SWE40006_Task1\installer\HashGuardInstaller\HashGuardInstaller.wixproj]
+    1 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.45

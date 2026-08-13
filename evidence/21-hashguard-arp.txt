@@ -1,0 +1,7 @@
+
+DisplayName     : HashGuard Desktop
+DisplayVersion  : 1.0.0
+Publisher       : Sidharth Krishnan
+InstallLocation : 
+UninstallString : MsiExec.exe /X{C57B16A8-E9E5-4EE9-8020-EE069EB409A7}
+

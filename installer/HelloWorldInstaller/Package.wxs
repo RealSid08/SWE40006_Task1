@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Package
+    Name="SWE40006 Hello World"
+    Manufacturer="Sidharth Krishnan"
+    Version="1.0.0"
+    ProductCode="{40C76FDB-606D-4DE6-9B17-F06149341B0A}"
+    UpgradeCode="{29C9C773-40F3-4C08-AFB9-9175FFA0E6D1}"
+    Scope="perUser">
+    <SummaryInformation Description="SWE40006 Task 1.1 Hello World installer" Manufacturer="Sidharth Krishnan" />
+    <MajorUpgrade DowngradeErrorMessage="A newer version of SWE40006 Hello World is already installed." />
+    <MediaTemplate EmbedCab="yes" />
+    <Feature Id="MainFeature" Title="SWE40006 Hello World" Level="1">
+      <ComponentGroupRef Id="HelloWorldComponents" />
+    </Feature>
+  </Package>
+
+  <Fragment>
+    <StandardDirectory Id="LocalAppDataFolder">
+      <Directory Id="ProgramsFolder" Name="Programs">
+        <Directory Id="INSTALLFOLDER" Name="SWE40006 Hello World" />
+      </Directory>
+    </StandardDirectory>
+  </Fragment>
+
+  <Fragment>
+    <ComponentGroup Id="HelloWorldComponents" Directory="INSTALLFOLDER">
+      <Component Id="HelloWorldExeComponent" Guid="{5A4B3CC7-C78C-4319-AEF3-219EA0A28F88}">
+        <File Id="HelloWorldExe" Source="..\..\src\HelloWorld\bin\Release\net10.0\win-x64\publish\SWE40006.HelloWorld.exe" KeyPath="yes" />
+      </Component>
+      <Component Id="HelloWorldDllComponent" Guid="{D0D4C69D-934C-413A-82E7-89350D827E70}">
+        <File Id="HelloWorldDll" Source="..\..\src\HelloWorld\bin\Release\net10.0\win-x64\publish\SWE40006.HelloWorld.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="HelloWorldDepsComponent" Guid="{D4C0B46D-1CA4-4267-91E4-BEF2E5283746}">
+        <File Id="HelloWorldDeps" Source="..\..\src\HelloWorld\bin\Release\net10.0\win-x64\publish\SWE40006.HelloWorld.deps.json" KeyPath="yes" />
+      </Component>
+      <Component Id="HelloWorldRuntimeComponent" Guid="{5172FC93-EF6F-421A-95A0-DCF036BDB8CC}">
+        <File Id="HelloWorldRuntime" Source="..\..\src\HelloWorld\bin\Release\net10.0\win-x64\publish\SWE40006.HelloWorld.runtimeconfig.json" KeyPath="yes" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>

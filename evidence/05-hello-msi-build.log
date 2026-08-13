@@ -1,0 +1,10 @@
+wix.exe : warning WIX1105: Validation could not run due to system policy. To eliminate this warning, run the process as admin or suppress ICE validation. [C:\Users\prosi\Documents\SWE40006_Task1\installer\HelloWorldInstaller\HelloWorldInstaller.wixproj]
+  HelloWorldInstaller -> C:\Users\prosi\Documents\SWE40006_Task1\installer\HelloWorldInstaller\bin\Release\SWE40006-HelloWorld-1.0.0-x64.msi
+
+Build succeeded.
+
+wix.exe : warning WIX1105: Validation could not run due to system policy. To eliminate this warning, run the process as admin or suppress ICE validation. [C:\Users\prosi\Documents\SWE40006_Task1\installer\HelloWorldInstaller\HelloWorldInstaller.wixproj]
+    1 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:02.75

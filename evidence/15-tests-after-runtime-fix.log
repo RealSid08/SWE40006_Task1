@@ -1,0 +1,16 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  HashGuard.Desktop -> C:\Users\prosi\Documents\SWE40006_Task1\src\HashGuard.Desktop\bin\Release\net10.0-windows\HashGuard.Desktop.dll
+  HashGuard.Tests -> C:\Users\prosi\Documents\SWE40006_Task1\src\HashGuard.Tests\bin\Release\net10.0-windows\HashGuard.Tests.dll
+Test run for C:\Users\prosi\Documents\SWE40006_Task1\src\HashGuard.Tests\bin\Release\net10.0-windows\HashGuard.Tests.dll (.NETCoreApp,Version=v10.0)
+A total of 1 test files matched the specified pattern.
+Test Parallelization enabled for C:\Users\prosi\Documents\SWE40006_Task1\src\HashGuard.Tests\bin\Release\net10.0-windows\HashGuard.Tests.dll (Workers: 12, Scope: MethodLevel)
+  Passed MatchesExpected_RejectsMalformedOrDifferentValues [5 ms]
+  Passed ComputeAsync_ReturnsExpectedSha256AndSha512 [17 ms]
+  Passed HistoryStore_RoundTripsJsonUsingNewtonsoftDependency [18 ms]
+  Passed CsvExport_WritesReadableHeadersAndData [52 ms]
+
+Test Run Successful.
+Total tests: 4
+     Passed: 4
+ Total time: 1.4972 Seconds

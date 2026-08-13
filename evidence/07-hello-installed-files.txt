@@ -1,0 +1,8 @@
+
+Name                                   Length LastWriteTime
+----                                   ------ -------------
+SWE40006.HelloWorld.deps.json             505 14/08/2026 2:59:18 AM
+SWE40006.HelloWorld.dll                  5120 14/08/2026 2:59:18 AM
+SWE40006.HelloWorld.exe                162816 14/08/2026 2:59:18 AM
+SWE40006.HelloWorld.runtimeconfig.json    342 14/08/2026 2:59:18 AM
+

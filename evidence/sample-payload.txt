@@ -1,0 +1,3 @@
+SWE40006 Software Deployment and Evolution
+HashGuard Desktop verification sample
+Version 1.0.0

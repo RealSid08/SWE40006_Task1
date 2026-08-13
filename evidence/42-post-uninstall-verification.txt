@@ -1,0 +1,7 @@
+HashGuardInstallDirectoryRemoved=True
+HelloWorldInstallDirectoryRemoved=True
+HashGuardStartMenuDirectoryRemoved=True
+HashGuardARPRemoved=True
+UserHistoryRetainedByDesign=True
+UserHistoryPath=C:\Users\prosi\AppData\Local\HashGuard Desktop\history.json
+MSIFilesRetained=True

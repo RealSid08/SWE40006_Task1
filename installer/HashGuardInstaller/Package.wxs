@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs"
+     xmlns:ui="http://wixtoolset.org/schemas/v4/wxs/ui">
+  <Package
+    Name="HashGuard Desktop"
+    Manufacturer="Sidharth Krishnan"
+    Version="1.0.0"
+    ProductCode="{C57B16A8-E9E5-4EE9-8020-EE069EB409A7}"
+    UpgradeCode="{23AB1A31-A44A-41FE-BBDA-5245030BAD76}"
+    Scope="perUser">
+    <SummaryInformation Description="File checksum calculator and verifier" Manufacturer="Sidharth Krishnan" />
+    <MajorUpgrade DowngradeErrorMessage="A newer version of HashGuard Desktop is already installed." />
+    <MediaTemplate EmbedCab="yes" />
+    <WixVariable Id="WixUILicenseRtf" Value="license.rtf" />
+    <ui:WixUI Id="WixUI_InstallDir" InstallDirectory="INSTALLFOLDER" />
+    <Feature Id="MainFeature" Title="HashGuard Desktop" Level="1">
+      <ComponentGroupRef Id="HashGuardComponents" />
+      <ComponentRef Id="StartMenuShortcutComponent" />
+    </Feature>
+  </Package>
+
+  <Fragment>
+    <StandardDirectory Id="LocalAppDataFolder">
+      <Directory Id="ProgramsFolder" Name="Programs">
+        <Directory Id="INSTALLFOLDER" Name="HashGuard Desktop" />
+      </Directory>
+    </StandardDirectory>
+    <StandardDirectory Id="ProgramMenuFolder">
+      <Directory Id="ApplicationProgramsFolder" Name="HashGuard Desktop" />
+    </StandardDirectory>
+  </Fragment>
+
+  <Fragment>
+    <ComponentGroup Id="HashGuardComponents" Directory="INSTALLFOLDER">
+      <Component Id="HashGuardExeComponent" Guid="{F4BA825E-434E-4095-8F37-5B12A8FCDDAC}">
+        <File Id="HashGuardExe" Source="..\..\src\HashGuard.Desktop\bin\Release\net10.0-windows\win-x64\publish\HashGuard.Desktop.exe" KeyPath="yes" />
+      </Component>
+      <Component Id="HashGuardDllComponent" Guid="{815918D3-C280-43BF-8553-FC9BBA71E1DC}">
+        <File Id="HashGuardDll" Source="..\..\src\HashGuard.Desktop\bin\Release\net10.0-windows\win-x64\publish\HashGuard.Desktop.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="HashGuardDepsComponent" Guid="{D47537ED-5827-4176-8B14-6B82DEFA8C95}">
+        <File Id="HashGuardDeps" Source="..\..\src\HashGuard.Desktop\bin\Release\net10.0-windows\win-x64\publish\HashGuard.Desktop.deps.json" KeyPath="yes" />
+      </Component>
+      <Component Id="HashGuardRuntimeComponent" Guid="{95DFE4D7-5DA8-418B-A235-75336D1E57BF}">
+        <File Id="HashGuardRuntime" Source="..\..\src\HashGuard.Desktop\bin\Release\net10.0-windows\win-x64\publish\HashGuard.Desktop.runtimeconfig.json" KeyPath="yes" />
+      </Component>
+      <Component Id="NewtonsoftJsonComponent" Guid="{9AAAABB3-2199-4AFB-B3F9-14AAAB88A66A}">
+        <File Id="NewtonsoftJsonDll" Source="..\..\src\HashGuard.Desktop\bin\Release\net10.0-windows\win-x64\publish\Newtonsoft.Json.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="CsvHelperComponent" Guid="{F6EBD07F-2291-4527-9317-4739766DD50B}">
+        <File Id="CsvHelperDll" Source="..\..\src\HashGuard.Desktop\bin\Release\net10.0-windows\win-x64\publish\CsvHelper.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="HumanizerComponent" Guid="{EA9E4267-5AA4-4E47-9AAA-463335F372FD}">
+        <File Id="HumanizerDll" Source="..\..\src\HashGuard.Desktop\bin\Release\net10.0-windows\win-x64\publish\Humanizer.dll" KeyPath="yes" />
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+
+  <Fragment>
+    <Component Id="StartMenuShortcutComponent" Directory="ApplicationProgramsFolder" Guid="{203A2E1E-BFCD-478A-8AFE-55F50974B618}">
+      <Shortcut
+        Id="HashGuardStartMenuShortcut"
+        Name="HashGuard Desktop"
+        Description="Calculate and verify file checksums"
+        Target="[INSTALLFOLDER]HashGuard.Desktop.exe"
+        WorkingDirectory="INSTALLFOLDER" />
+      <RemoveFolder Id="RemoveHashGuardStartMenuFolder" On="uninstall" />
+      <RegistryValue Root="HKCU" Key="Software\SidharthKrishnan\HashGuardDesktop" Name="Installed" Type="integer" Value="1" KeyPath="yes" />
+    </Component>
+  </Fragment>
+</Wix>

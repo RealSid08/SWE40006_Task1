@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "installer", "installer", "{1860D2E4-5C43-71D5-59A5-599A4DE1DF67}"
+EndProject
+Project("{B7DD6F7E-DEF8-4E67-B5B7-07EF123DB6F0}") = "HelloWorldInstaller", "installer\HelloWorldInstaller\HelloWorldInstaller.wixproj", "{44948EE6-4F0D-478F-944C-93F858B93F2F}"
+EndProject
+Project("{B7DD6F7E-DEF8-4E67-B5B7-07EF123DB6F0}") = "HashGuardInstaller", "installer\HashGuardInstaller\HashGuardInstaller.wixproj", "{CC0BBA08-ACA7-4274-95A4-742532D47B05}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{44948EE6-4F0D-478F-944C-93F858B93F2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44948EE6-4F0D-478F-944C-93F858B93F2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44948EE6-4F0D-478F-944C-93F858B93F2F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{44948EE6-4F0D-478F-944C-93F858B93F2F}.Debug|x64.Build.0 = Debug|Any CPU
+		{44948EE6-4F0D-478F-944C-93F858B93F2F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{44948EE6-4F0D-478F-944C-93F858B93F2F}.Debug|x86.Build.0 = Debug|Any CPU
+		{44948EE6-4F0D-478F-944C-93F858B93F2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44948EE6-4F0D-478F-944C-93F858B93F2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44948EE6-4F0D-478F-944C-93F858B93F2F}.Release|x64.ActiveCfg = Release|Any CPU
+		{44948EE6-4F0D-478F-944C-93F858B93F2F}.Release|x64.Build.0 = Release|Any CPU
+		{44948EE6-4F0D-478F-944C-93F858B93F2F}.Release|x86.ActiveCfg = Release|Any CPU
+		{44948EE6-4F0D-478F-944C-93F858B93F2F}.Release|x86.Build.0 = Release|Any CPU
+		{CC0BBA08-ACA7-4274-95A4-742532D47B05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC0BBA08-ACA7-4274-95A4-742532D47B05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC0BBA08-ACA7-4274-95A4-742532D47B05}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CC0BBA08-ACA7-4274-95A4-742532D47B05}.Debug|x64.Build.0 = Debug|Any CPU
+		{CC0BBA08-ACA7-4274-95A4-742532D47B05}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CC0BBA08-ACA7-4274-95A4-742532D47B05}.Debug|x86.Build.0 = Debug|Any CPU
+		{CC0BBA08-ACA7-4274-95A4-742532D47B05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC0BBA08-ACA7-4274-95A4-742532D47B05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC0BBA08-ACA7-4274-95A4-742532D47B05}.Release|x64.ActiveCfg = Release|Any CPU
+		{CC0BBA08-ACA7-4274-95A4-742532D47B05}.Release|x64.Build.0 = Release|Any CPU
+		{CC0BBA08-ACA7-4274-95A4-742532D47B05}.Release|x86.ActiveCfg = Release|Any CPU
+		{CC0BBA08-ACA7-4274-95A4-742532D47B05}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{44948EE6-4F0D-478F-944C-93F858B93F2F} = {1860D2E4-5C43-71D5-59A5-599A4DE1DF67}
+		{CC0BBA08-ACA7-4274-95A4-742532D47B05} = {1860D2E4-5C43-71D5-59A5-599A4DE1DF67}
+	EndGlobalSection
+EndGlobal

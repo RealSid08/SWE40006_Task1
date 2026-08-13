@@ -1,0 +1,17 @@
+
+TimeCreated      : 14/08/2026 3:01:00 AM
+ProviderName     : .NET Runtime
+Id               : 1026
+LevelDisplayName : Error
+Message          : Application: HashGuard.Desktop.exe
+                   CoreCLR Version: 10.0.1126.37416
+                   .NET Version: 10.0.11
+                   Description: The process was terminated due to an unhandled exception.
+                   Exception Info: System.NotSupportedException: ButtonBase controls do not support setting the BorderColor to Transparent.
+                      at System.Windows.Forms.FlatButtonAppearance.set_BorderColor(Color value)
+                      at HashGuard.Desktop.ButtonExtensions.WithFlatBorder(Button button, Color color)
+                      at HashGuard.Desktop.MainForm.CreatePrimaryButton(String text)
+                      at HashGuard.Desktop.MainForm..ctor()
+                      at HashGuard.Desktop.Program.Main()
+                   
+

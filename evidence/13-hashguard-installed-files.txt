@@ -1,0 +1,11 @@
+
+Name                                 Length LastWriteTime
+----                                 ------ -------------
+CsvHelper.dll                        226816 3/06/2025 12:33:32 AM
+HashGuard.Desktop.deps.json            2209 14/08/2026 2:59:50 AM
+HashGuard.Desktop.dll                 36352 14/08/2026 2:59:50 AM
+HashGuard.Desktop.exe                162816 14/08/2026 2:59:50 AM
+HashGuard.Desktop.runtimeconfig.json    519 14/08/2026 2:59:50 AM
+Humanizer.dll                        643760 7/03/2026 4:19:14 PM
+Newtonsoft.Json.dll                  723368 16/09/2025 6:04:24 PM
+

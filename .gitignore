@@ -1,0 +1,12 @@
+**/bin/
+**/obj/
+.vs/
+TestResults/
+*.user
+*.suo
+evidence/*.tmp
+report/rendered*/
+report/assets/
+report/*.txt
+evidence/23-visual-studio-app-solution.png
+reference/HeatWave.vsix
