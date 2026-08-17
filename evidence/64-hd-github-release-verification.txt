@@ -1,0 +1,13 @@
+HashGuard Desktop 1.0.0 public release
+
+Release page:
+https://github.com/RealSid08/SWE40006_Task1/releases/tag/v1.0.0
+
+MSI asset:
+https://github.com/RealSid08/SWE40006_Task1/releases/download/v1.0.0/HashGuard-Desktop-1.0.0-x64.msi
+
+Asset name: HashGuard-Desktop-1.0.0-x64.msi
+Asset size: 1,097,728 bytes
+SHA-256: A947612491037D6512AFA6AECEC5838628D7A8B899F6520B476F42FE7AFE6A5B
+
+The GitHub Release asset digest, downloaded file digest, and WinGet InstallerSha256 field all matched.

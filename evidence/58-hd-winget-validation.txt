@@ -1,0 +1,19 @@
+HashGuard Desktop 1.0.0 WinGet manifest validation
+Date: 17 August 2026
+
+Command:
+winget validate --manifest manifests\s\SidharthKrishnan\HashGuardDesktop\1.0.0
+
+Result:
+Manifest validation succeeded.
+
+Dependency note:
+The manifest declares Microsoft.DotNet.DesktopRuntime.10 with minimum version 10.0.0. WinGet independently resolved the package identifier and reported current version 10.0.11.
+
+Release asset verification:
+Downloaded size: 1,097,728 bytes
+SHA-256: A947612491037D6512AFA6AECEC5838628D7A8B899F6520B476F42FE7AFE6A5B
+The downloaded GitHub Release asset hash matched the installer manifest.
+
+Local installation verification:
+The published MSI installed successfully with Windows Installer (exit code 0). Seven application files were installed, and HashGuard Desktop 1.0.0 was detected in Apps and Features by its product code.

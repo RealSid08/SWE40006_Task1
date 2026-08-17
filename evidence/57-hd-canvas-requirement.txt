@@ -1,0 +1,14 @@
+SWE40006 Deployment Portfolio Task 1
+Task 1.4 - High Distinction requirement
+Captured from Canvas on 17 August 2026
+
+Threshold statement:
+High Distinction (HD): Complete Task 1.3 AND implement a distribution using WinGet.
+
+Detailed Task 1.4 statement:
+Host the .msi on GitHub Releases and submit a valid package manifest Pull Request to the official Microsoft/winget-pkgs repository; alternatively, package and publish the application to the public Chocolatey Community Repository.
+
+Selected implementation:
+GitHub Releases plus an official WinGet manifest pull request.
+
+The requirement calls for the pull request to be submitted. It does not require that the pull request be merged before submission of the assignment.

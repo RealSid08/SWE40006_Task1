@@ -1,0 +1,26 @@
+Official WinGet pull request
+Captured on 17 August 2026
+
+Repository: microsoft/winget-pkgs
+Pull request: https://github.com/microsoft/winget-pkgs/pull/418824
+Title: New package: SidharthKrishnan.HashGuardDesktop version 1.0.0
+State: Open
+Base: microsoft:master
+Head: RealSid08:agent/hashguard-desktop-1.0.0
+Commit count: 1
+Manifest files: 3
+Lines added: 58
+
+Automated results captured after submission:
+- Pull Request Validation: passed
+- Manifest Validation: passed
+- URLs Validation: passed
+- URL Domain Validation: passed
+- Manifest Policy Validation: passed
+- Catalog Content Verification: passed
+- Installers Scan: passed
+- Installation Validation: running
+- Installer Metadata Validation: queued
+- Validation Completed: queued
+
+The remaining repository checks were still running when this evidence record was captured. The Microsoft Contributor License Agreement requires separate personal acceptance and is not part of the assignment requirement to submit the pull request.
