@@ -1,0 +1,17 @@
+Build started 17/08/2026 9:36:04 PM.
+Logging verbosity is set to: Normal.     1>Project "C:\Users\prosi\Documents\SWE40006_Task1\installer\HashGuardInstaller\HashGuardInstaller.wixproj" on node 1 (default targets).
+     1>CoreCompile:
+         C:\Program Files\dotnet\dotnet.exe exec "C:\Users\prosi\.nuget\packages\wixtoolset.sdk\4.0.6\tools\net6.0\wix.dll" build -platform x64 -out obj\Release\HashGuard-Desktop-1.0.0-x64.msi -outputType Package -pdb obj\Release\HashGuard-Desktop-1.0.0-x64.wixpdb -pdbType full -culture null -d Configuration=Release -d OutDir=bin\Release\ -d InstallerPlatform=x64 -d Platform=AnyCPU -d ProjectDir=C:\Users\prosi\Documents\SWE40006_Task1\installer\HashGuardInstaller\ -d ProjectExt=.wixproj -d ProjectFileName=HashGuardInstaller.wixproj -d ProjectName=HashGuardInstaller -d ProjectPath=C:\Users\prosi\Documents\SWE40006_Task1\installer\HashGuardInstaller\HashGuardInstaller.wixproj -d TargetDir=C:\Users\prosi\Documents\SWE40006_Task1\installer\HashGuardInstaller\bin\Release\ -d TargetExt=.msi -d TargetFileName=HashGuard-Desktop-1.0.0-x64.msi -d TargetName=HashGuard-Desktop-1.0.0-x64 -d TargetPath=C:\Users\prosi\Documents\SWE40006_Task1\installer\HashGuardInstaller\bin\Release\HashGuard-Desktop-1.0.0-x64.msi -ext C:\Users\prosi\.nuget\packages\wixtoolset.ui.wixext\4.0.6\wixext4\WixToolset.UI.wixext.dll -intermediatefolder obj\Release\ -trackingfile obj\Release\HashGuardInstaller.wixproj.BindTracking-neutral.txt -nologo  Package.wxs
+       WindowsInstallerValidation:
+         C:\Program Files\dotnet\dotnet.exe exec "C:\Users\prosi\.nuget\packages\wixtoolset.sdk\4.0.6\tools\net6.0\wix.dll" msi validate obj\Release\HashGuard-Desktop-1.0.0-x64.msi -pdb obj\Release\HashGuard-Desktop-1.0.0-x64.wixpdb -intermediatefolder obj\Release\ -sice ICE91 -nologo
+       CopyFilesToOutputDirectory:
+         HashGuardInstaller -> C:\Users\prosi\Documents\SWE40006_Task1\installer\HashGuardInstaller\bin\Release\HashGuard-Desktop-1.0.0-x64.msi
+     1>Done Building Project "C:\Users\prosi\Documents\SWE40006_Task1\installer\HashGuardInstaller\HashGuardInstaller.wixproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+FileLogger wrote to: C:\Users\prosi\Documents\SWE40006_Task1\evidence\53-hd-msi-validation-build.log
+
+Time Elapsed 00:00:02.70
