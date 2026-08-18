@@ -12,6 +12,8 @@
     <MediaTemplate EmbedCab="yes" />
     <Feature Id="MainFeature" Title="SWE40006 Hello World" Level="1">
       <ComponentGroupRef Id="HelloWorldComponents" />
+      <ComponentRef Id="InstallFolderCleanupComponent" />
+      <ComponentRef Id="ProgramsFolderCleanupComponent" />
     </Feature>
   </Package>
 
@@ -26,17 +28,32 @@
   <Fragment>
     <ComponentGroup Id="HelloWorldComponents" Directory="INSTALLFOLDER">
       <Component Id="HelloWorldExeComponent" Guid="{5A4B3CC7-C78C-4319-AEF3-219EA0A28F88}">
-        <File Id="HelloWorldExe" Source="..\..\src\HelloWorld\bin\Release\net10.0\win-x64\publish\SWE40006.HelloWorld.exe" KeyPath="yes" />
+        <File Id="HelloWorldExe" Source="..\..\src\HelloWorld\bin\Release\net10.0\win-x64\publish\SWE40006.HelloWorld.exe" />
+        <RegistryValue Root="HKCU" Key="Software\SidharthKrishnan\HelloWorld\Components" Name="HelloWorldExe" Type="integer" Value="1" KeyPath="yes" />
       </Component>
       <Component Id="HelloWorldDllComponent" Guid="{D0D4C69D-934C-413A-82E7-89350D827E70}">
-        <File Id="HelloWorldDll" Source="..\..\src\HelloWorld\bin\Release\net10.0\win-x64\publish\SWE40006.HelloWorld.dll" KeyPath="yes" />
+        <File Id="HelloWorldDll" Source="..\..\src\HelloWorld\bin\Release\net10.0\win-x64\publish\SWE40006.HelloWorld.dll" />
+        <RegistryValue Root="HKCU" Key="Software\SidharthKrishnan\HelloWorld\Components" Name="HelloWorldDll" Type="integer" Value="1" KeyPath="yes" />
       </Component>
       <Component Id="HelloWorldDepsComponent" Guid="{D4C0B46D-1CA4-4267-91E4-BEF2E5283746}">
-        <File Id="HelloWorldDeps" Source="..\..\src\HelloWorld\bin\Release\net10.0\win-x64\publish\SWE40006.HelloWorld.deps.json" KeyPath="yes" />
+        <File Id="HelloWorldDeps" Source="..\..\src\HelloWorld\bin\Release\net10.0\win-x64\publish\SWE40006.HelloWorld.deps.json" />
+        <RegistryValue Root="HKCU" Key="Software\SidharthKrishnan\HelloWorld\Components" Name="HelloWorldDeps" Type="integer" Value="1" KeyPath="yes" />
       </Component>
       <Component Id="HelloWorldRuntimeComponent" Guid="{5172FC93-EF6F-421A-95A0-DCF036BDB8CC}">
-        <File Id="HelloWorldRuntime" Source="..\..\src\HelloWorld\bin\Release\net10.0\win-x64\publish\SWE40006.HelloWorld.runtimeconfig.json" KeyPath="yes" />
+        <File Id="HelloWorldRuntime" Source="..\..\src\HelloWorld\bin\Release\net10.0\win-x64\publish\SWE40006.HelloWorld.runtimeconfig.json" />
+        <RegistryValue Root="HKCU" Key="Software\SidharthKrishnan\HelloWorld\Components" Name="HelloWorldRuntime" Type="integer" Value="1" KeyPath="yes" />
       </Component>
     </ComponentGroup>
+  </Fragment>
+
+  <Fragment>
+    <Component Id="InstallFolderCleanupComponent" Directory="INSTALLFOLDER" Guid="{620EFF87-FE74-48DF-8F39-4A346A982BE0}">
+      <RemoveFolder Id="RemoveHelloWorldInstallFolder" On="uninstall" />
+      <RegistryValue Root="HKCU" Key="Software\SidharthKrishnan\HelloWorld\Folders" Name="InstallFolder" Type="integer" Value="1" KeyPath="yes" />
+    </Component>
+    <Component Id="ProgramsFolderCleanupComponent" Directory="ProgramsFolder" Guid="{96500336-2C2A-4DBD-BBC5-7168EC3DCFC7}">
+      <RemoveFolder Id="RemoveProgramsFolderIfEmpty" On="uninstall" />
+      <RegistryValue Root="HKCU" Key="Software\SidharthKrishnan\HelloWorld\Folders" Name="ProgramsFolder" Type="integer" Value="1" KeyPath="yes" />
+    </Component>
   </Fragment>
 </Wix>

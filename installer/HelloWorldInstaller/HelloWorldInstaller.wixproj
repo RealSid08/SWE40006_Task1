@@ -4,5 +4,6 @@
     <OutputType>Package</OutputType>
     <InstallerPlatform>x64</InstallerPlatform>
     <SuppressValidation>false</SuppressValidation>
+    <SuppressIces>ICE91</SuppressIces>
   </PropertyGroup>
 </Project>
